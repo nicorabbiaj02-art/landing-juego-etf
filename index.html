@@ -18,11 +18,11 @@
     --neon:#22e1ff;         /* celeste neón */
     --blue:#2f7bff;         /* azul eléctrico */
     --navy:#0b2c5f;         /* azul del wordmark */
-    --text:#eaf6ff; --muted:#9db4d1; --line:rgba(34,225,255,.18);
+    --text:#ffffff; --muted:#d3e3f5; --line:rgba(34,225,255,.18);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;overflow-x:hidden}
-  body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;overflow-x:hidden}
+  body{-webkit-font-smoothing:antialiased;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;overflow-x:hidden}
   h1,h2,h3,.btn,.brand,.chip b,.testi b,.prize .tag,.badge-cnv{font-family:Montserrat,system-ui,sans-serif}
   a{color:inherit}
   .wrap{width:min(1140px,92vw);margin:0 auto}
@@ -75,7 +75,7 @@
   .row{display:flex;gap:10px}
   .lead-form input[type=email]{flex:1;min-width:0;font:500 1rem Inter,sans-serif;color:var(--text);background:rgba(4,11,29,.8);
     border:1px solid rgba(157,180,209,.25);border-radius:14px;padding:16px 18px;outline:none;transition:border .2s,box-shadow .2s}
-  .lead-form input[type=email]::placeholder{color:#6f87a6}
+  .lead-form input[type=email]::placeholder{color:#9fb5d0}
   .lead-form input[type=email]:focus{border-color:var(--neon);box-shadow:0 0 0 4px rgba(34,225,255,.15)}
   .consent{display:flex;gap:10px;align-items:flex-start;font-size:.8rem;color:var(--muted);padding:12px 8px 4px;cursor:pointer}
   .consent input{margin-top:3px;accent-color:var(--neon)}
@@ -114,7 +114,7 @@
 
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
   .step{position:relative;padding:30px 26px;border-radius:22px;background:linear-gradient(180deg,rgba(11,28,63,.9),rgba(7,20,49,.9));border:1px solid var(--line);overflow:hidden}
-  .step::before{counter-increment:s;content:"0" counter(s);position:absolute;right:18px;top:6px;font:900 4.6rem Montserrat,system-ui,sans-serif;color:rgba(34,225,255,.08)}
+  .step::before{counter-increment:s;content:"0" counter(s);position:absolute;right:18px;top:6px;font:900 4.6rem Montserrat,system-ui,sans-serif;line-height:1.1;color:rgba(34,225,255,.14);-webkit-text-stroke:1.5px rgba(34,225,255,.85);text-shadow:0 0 18px rgba(34,225,255,.45)}
   .step .ico{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;margin-bottom:18px;
     background:rgba(34,225,255,.1);border:1px solid rgba(34,225,255,.35);color:var(--neon);box-shadow:0 0 22px rgba(34,225,255,.25)}
   .step .ico svg{width:26px;height:26px}
@@ -175,7 +175,7 @@
   footer{padding:40px 0 50px;border-top:1px solid var(--line);margin-top:40px;color:var(--muted);font-size:.85rem}
   .foot{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:flex-start}
   .foot .brand{color:var(--text)}
-  .disclaimer{max-width:620px;font-size:.78rem;color:#7189a8}
+  .disclaimer{max-width:620px;font-size:.8rem;color:#b9cbe0}
 
   /* ---------- overlay de redirección ---------- */
   .overlay{position:fixed;inset:0;z-index:50;display:none;place-items:center;background:rgba(2,6,18,.82);backdrop-filter:blur(10px)}
